@@ -37,13 +37,8 @@ while True:
             
             for keyword in sport:
                 if keyword in command:
-                    if sport[keyword][0]=="Spch":
-                        print(sport[keyword][1])
-                        engine.say(sport[keyword][1])
-                        engine.runAndWait()
-                    if sport[keyword][0]=="WB":
-                        print(sport[keyword][1])
-                        webbrowser.open(sport[keyword][1])
+                   engine.say(sport[keyword])
+                   engine.runAndWait()
                         
                    
         else:
